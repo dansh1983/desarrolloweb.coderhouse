@@ -1,0 +1,39 @@
+header {
+  .logo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    grid-area: logo;
+  }
+  .titulo {
+    grid-area: titulo;
+  }
+  h1 {
+    font-family: "DM Serif Display", serif;
+    color: $titulo;
+    text-align: center;
+  }
+  .botones {
+    grid-area: botones;
+  }
+  nav {
+    padding: 1rem;
+  }
+  nav ul {
+    list-style: none;
+    background-color: $bg-bot;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav ul a {
+    color: $col-bot;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+    &:hover {
+      background-color: $col-bot;
+      color: $bg-bot;
+      font-weight: bold;
+    }
+  }
+}

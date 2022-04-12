@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+  background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "logo logo" "titulo titulo" "botones botones" "main main" "footer footer";
+}
+
+header .logo {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: logo;
+}
+
+header .titulo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+}
+
+header h1 {
+  font-family: "DM Serif Display", serif;
+  color: #ff0000;
+  text-align: center;
+}
+
+header .botones {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: botones;
+}
+
+header nav {
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  background-color: #ff2020;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header nav ul a {
+  color: #faeb19;
+  text-decoration: none;
+  padding: 0.7rem;
+  display: block;
+}
+
+header nav ul a:hover {
+  background-color: #faeb19;
+  color: #ff2020;
+  font-weight: bold;
+}
+
+main {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main h2 {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .historia {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+}
+
+main .card-text {
+  text-align: justify;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #636262;
+}
+
+main .productos {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+}
+
+main h3 {
+  font-family: "Nanum Gothic", sans-serif;
+  color: #070783;
+  text-align: center;
+  font-size: xx-large;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+main h4 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: italic;
+  font-size: small;
+}
+
+main h5 {
+  margin: 1rem;
+  padding: 1rem;
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+  font-style: oblique;
+}
+
+main form {
+  font-family: "Nanum Gothic", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+main .field {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .contact {
+  font-size: 27px;
+  padding: 10px;
+  color: #025851;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+main .contact .contact {
+  color: #ff0000;
+}
+
+main .contact .field {
+  color: #ff2020;
+}
+
+@media screen and (max-width: 700px) {
+  .contenedor {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: "logo" "titulo" "botones" "botones" "main" "footer";
+  }
+}
+
+footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-style: italic;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+footer h6:hover {
+  color: blue;
+}
+
+footer .redes {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 40px;
+  height: 40px;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .sect1 {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */
